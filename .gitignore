@@ -92,7 +92,6 @@ ENV/
 local_config.yml
 
 /xunit.xml
-client_secrets.json
 
 SSL/
 
