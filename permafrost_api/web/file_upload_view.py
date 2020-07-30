@@ -18,7 +18,7 @@ def download_file(fullpath, filename):
             io.BytesIO(binary.read()),
             attachment_filename=filename,
             as_attachment=True,
-            mimetype="application/binary")
+            mimetype="application/binary", cache_timeout=-1)
     return Response(json.dumps([]), 404, mimetype="application/json")
 
 @permafrost_bp.route("/file_upload", methods=['POST'])

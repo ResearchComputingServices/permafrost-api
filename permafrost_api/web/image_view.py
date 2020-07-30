@@ -17,5 +17,5 @@ from flask import send_file
 def get_image():
     name = request.args.get('name')
     if name:
-        return send_file("images/" + name, mimetype='image/gif')
+        return send_file("images/" + name, mimetype='image/gif', cache_timeout=-1)
     return Response(json.dumps([]), 404, mimetype="application/json")
