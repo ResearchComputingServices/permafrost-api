@@ -26,7 +26,7 @@ class Settings(db.Model):
     def __repr__(self):
         return '<settings %r>' % self.name
 
-class SettingsSchema(ma.ModelSchema):
+class SettingsSchema(ma.SQLAlchemySchema):
     class Meta:
         model = Settings
 

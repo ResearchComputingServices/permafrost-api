@@ -30,7 +30,7 @@ class OverlyMap(db.Model):
     def __repr__(self):
         return '<overly_map %r>' % self.name
 
-class OverlyMapSchema(ma.ModelSchema):
+class OverlyMapSchema(ma.SQLAlchemySchema):
     class Meta:
         model = OverlyMap
 

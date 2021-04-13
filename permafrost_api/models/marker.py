@@ -28,7 +28,7 @@ class Marker(db.Model):
     def __repr__(self):
         return '<marker %r>' % self.name
 
-class MarkerSchema(ma.ModelSchema):
+class MarkerSchema(ma.SQLAlchemySchema):
     class Meta:
         model = Marker
 

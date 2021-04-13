@@ -26,8 +26,6 @@ netCDF4
 numpy
 oauth2client
 pandas
-pbkdf2
-pgeocode
 Pillow
 psycopg2-binary
 pyasn1
